@@ -1,16 +1,34 @@
-# This is a sample Python script.
-
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import requests
+import json
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+def query_ollama_model(query, model="deepseek-r1:1.5b"):
+    url = "http://localhost:11434/api/generate"  # Cập nhật URL theo endpoint từ Postman
+    payload = {
+        "model": model,
+        "messages": [{"role": "user", "content": query}],
+        "temperature": 0.7
+    }
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    response = requests.post(url, headers=headers, data=json.dumps(payload))
+
+    # In ra toàn bộ phản hồi để kiểm tra cấu trúc
+    print(response.json())
+
+    try:
+        # Trả về nội dung từ phản hồi nếu có
+        result = response.json()
+        return result['choices'][0]['message']['content']
+    except KeyError as e:
+        # Nếu không tìm thấy khóa 'choices', in lỗi và trả về phản hồi gốc
+        print(f"KeyError: {e}")
+        return result  # Trả về toàn bộ phản hồi để kiểm tra
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Thử nghiệm với câu hỏi
+query = "Khi nào sinh viên bị đuổi học?"
+result = query_ollama_model(query)
+print(result)
