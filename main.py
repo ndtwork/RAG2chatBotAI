@@ -10,7 +10,7 @@ def query_ollama_model(query, model="deepseek-r1:1.5b"):
         "temperature": 0.7
     }
     headers = {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json"  
     }
 
     response = requests.post(url, headers=headers, data=json.dumps(payload))
