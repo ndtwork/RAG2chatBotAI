@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85763613-1fa2-4d4c-98f2-78b7090a0247" name="Changes" comment="first commit addd readme file">
-      <change afterPath="$PROJECT_DIR$/accessFaissByGPT.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accessFaissByGrok.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fromDocByGPT.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fromDocByGrok.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fromDocUseDeepseek.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pdf2text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xulytailieu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hieu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hieuAI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf to text.py" beforeDir="false" afterPath="$PROJECT_DIR$/RAGwithOllama.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,6 +233,8 @@
       <workItem from="1740550059809" duration="10827000" />
       <workItem from="1740578250965" duration="2032000" />
       <workItem from="1740649800587" duration="1372000" />
+      <workItem from="1741240005456" duration="170000" />
+      <workItem from="1741249741911" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="first commit addd readme file">
       <option name="closed" value="true" />
